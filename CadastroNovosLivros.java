@@ -7,46 +7,36 @@ public class CadastroNovosLivros {
 		Scanner leia = new Scanner(System.in);
 		
 		String titulo,//nome do livro
-				autor,//autor principal do livro, ou autores em ordem alfabÈtica
-				genero,//opÁıes fixas para escolha(laÁo case?)
-				local,//localizaÁ„o dentro da bilbioteca
-				demanda,//de acordo com a quantidade de emprÈstimos
-				status;//disponÌvel/indisponÌvel
+				autor,//autor principal do livro, ou autores em ordem alfab√©tica
+				genero,//op√ß√µes fixas para escolha(la√ßo case?)
+				local,//localiza√ß√£o dentro da bilbioteca
+				status;//dispon√≠vel/indispon√≠vel
 				
 		
 		int quant=0,//quantidade de livros cadastrados
-			ano,//ano de publicaÁ„o
-			codigo,//automatizaÁ„o de cÛdigo?
-			avaliacao=0,//input pelo cliente no momento de devoluÁ„o
-			conf;//confirmaÁ„o do cadastro
+			ano,//ano de publica√ß√£o
+			codigo,//automatiza√ß√£o de c√≥digo?
+			conf;//confirma√ß√£o do cadastro
 		
 		System.out.print("CADASTRO DE NOVOS LIVROS");
 		
-		System.out.print("\nTÌtulo:");
+		System.out.print("\nT√≠tulo:");
 		titulo = leia.next();
 		
 		System.out.print("\nAutor:");
 		autor = leia.next();
 		
-		System.out.print("\nAno de publicaÁ„o:");
+		System.out.print("\nAno de publica√ß√£o:");
 		ano = leia.nextInt();
 		
-		System.out.print("\nGÍnero:");
+		System.out.print("\nG√™nero:");
 		genero = leia.next();
 				
-		System.out.print("\nCÛdigo gerado:");
-		//automatizaÁ„o?
+		System.out.print("\nC√≥digo gerado:");
+		//automatiza√ß√£o?
 		
-		System.out.print("\nLocalizaÁ„o gerada:");
-		//automatizaÁ„o?
-				
-		System.out.print("\nDemanda:");
-		//automatizaÁ„o
-		
-		System.out.print("\nAvaliaÁ„o:"
-				+ "\n"+avaliacao);
-		
-		
+		System.out.print("\nLocaliza√ß√£o gerada:");
+		//automatiza√ß√£o?
 		
 		System.out.print("\nCONFIRMA?"
 				+ "\ndigite 1 para confirmar"
@@ -54,7 +44,7 @@ public class CadastroNovosLivros {
 		conf = leia.nextInt();
 		
 		while(conf!=1||conf!=2) {
-			System.err.print("\nOP«√O INV¡LIDA");
+			System.err.print("\nOP√á√ÉO INV√ÅLIDA");
 			System.out.print("\nCONFIRMA?"
 					+ "\ndigite 1 para confirmar"
 					+ "\ndigite 2 para cancelar");
@@ -70,7 +60,7 @@ public class CadastroNovosLivros {
 		}
 		
 		quant++;
-		System.out.print("\nN˙mero de livros cadastrados:"
+		System.out.print("\nN√∫mero de livros cadastrados:"
 				+ quant);
 		
 		
