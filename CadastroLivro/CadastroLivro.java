@@ -9,17 +9,17 @@ public class CadastroLivro {
 	private String titulo;
 	private String autor;
 	private String genero;
-	private String status; //Juci
 	private int quant=0;//quantidade de livros cadastrados
 	private int ano;//ano de publicação
 	private int codigo=0;//simples usar ++ para simplificação
 	private int conf;//confirmação do cadastro
 
-	public CadastroLivro(String titulo) {
+	public CadastroLivro(String titulo, String autor, String genero, int ano, int codigo) {
 		this.titulo = titulo;
 		this.autor = autor;
 		this.genero = genero;
-		this.status = status; //Juci
+		this.ano = ano;
+		this.codigo = codigo;
 	}
 	
 	public void printInfo() {
@@ -57,14 +57,6 @@ public class CadastroLivro {
 
 	public void setGenero(String genero) {
 		this.genero = genero;
-	}
-
-	public String getStatus() {
-		return status;
-	}
-
-	public void setStatus(String status) {
-		this.status = status;
 	}
 
 	public int getQuant() {

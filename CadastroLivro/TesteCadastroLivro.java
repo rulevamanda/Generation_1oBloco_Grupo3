@@ -28,7 +28,7 @@ public class TesteCadastroLivro {
 		System.out.println("Código gerado: "+codigo);
 		
 		
-		CadastroLivro novo = new CadastroLivro(titulo+autor+ano+genero+codigo);
+		CadastroLivro novo = new CadastroLivro(titulo,autor,genero,ano,codigo);
 			
 		novo.printInfo();
 		
