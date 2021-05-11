@@ -10,7 +10,7 @@ public class TesteCadastroLivro {
 		
 		String titulo,autor,genero;
 		
-		int quant=0,ano,codigo=0,status;
+		int quant=0,ano,codigo=0;
 		
 		System.out.println("Digite o título do livro: ");
 		titulo = read.nextLine();
@@ -27,21 +27,11 @@ public class TesteCadastroLivro {
 		codigo++;
 		System.out.println("Código gerado: "+codigo);
 		
-		System.out.println("Status do livro para empréstimo: ");
-		status=read.nextInt();
-
-		if(status==1) {
-			System.out.println("DISPONÍVEL");
-		}
 		
-		if(status==2) {
-			System.out.println("INDISPONÍVEL");
-		}
+		CadastroLivro novo = new CadastroLivro(titulo+autor+ano+genero+codigo);
+			
+		novo.printInfo();
 		
-		
-		CadastroLivro novo = new CadastroLivro("Título: "+titulo+"\nAutor: "+autor+"\nAno de publicação: "+ano+"\nGênero: "
-				+genero+"\nCódigo gerado: "+codigo+"\nStatus para empréstimo: "+status);
-				
 		quant++;
 		System.out.println("Quantidade de livros cadastrados: "+quant);
 

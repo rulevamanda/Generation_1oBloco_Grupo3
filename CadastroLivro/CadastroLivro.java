@@ -24,7 +24,7 @@ public class CadastroLivro {
 	
 	public void printInfo() {
 		System.out.println("Título: "+titulo+"\nAutor: "+autor+"\nAno de publicação: "+ano+"\nGênero: "
-								+genero+"\nCódigo gerado: "+codigo+"\nStatus para empréstimo: "+status);
+								+genero+"\nCódigo gerado: "+codigo);
 	}
 	
 	public Scanner getLeia() {
