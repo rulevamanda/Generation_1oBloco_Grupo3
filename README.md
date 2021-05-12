@@ -12,7 +12,7 @@ Trello board: https://trello.com/b/1PVIDJ9V/projeto-1o-bloco
 * Juci Leal
 * Miguel Nunes
 
-### **Future Features***
+### **Future Features**
 * bloqueio de clientes que não retornam livros
 * avaliação de livros
 * histórico de avaliação de clientes para recomendações
