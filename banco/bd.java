@@ -57,11 +57,11 @@ public class bd {
 			info.add(this.quant);
 			info.add(this.ano);
 				
-			Collection<String> lista = new ArrayList<String>();  
+			List<String> lista = new ArrayList<String>();  
 			lista.addAll(info);
 	        
-			for (int i = 0; i < aulas.size(); i++) {
-			    System.out.println("aula : " + aulas.get(i));
+			for (int i = 0; i < lista.size(); i++) {
+			    System.out.println("aula : " + lista.get(i));
 			}
 			/*
 	        for (String l : lista) {
