@@ -1,12 +1,15 @@
 package prjModuloBloco1;
 
 import java.util.Scanner;
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Collections;
 
 public class TesteCadastroLivro {
 
 	public static void TesteCadastroLivro() {
 		
-//	public static void main(String[] args) {
+	//public static void main(String[] args) {
 		
 		Scanner read = new Scanner(System.in);
 		
@@ -33,9 +36,14 @@ public class TesteCadastroLivro {
 		CadastroLivro novo = new CadastroLivro(titulo,autor,genero,ano,codigo);
 			
 		novo.printInfo();
-		
 		quant++;
 		System.out.println("Quantidade de livros cadastrados: "+quant);
+		
+		/* Tentativa de Usar COLLECTION
+		 * 
+		ArrayList<CadastroLivro> livro = new ArrayList<>();
+        livro.add(novo);
+		System.out.println(livro);*/
 		
 		
 	}

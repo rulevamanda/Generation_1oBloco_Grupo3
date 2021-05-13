@@ -2,9 +2,10 @@ package prjModuloBloco1;
 
 import java.util.Scanner;
 
+
 public class CadastroLivro {
 	
-	Scanner leia = new Scanner(System.in);
+	//Scanner leia = new Scanner(System.in);
 	
 	private String titulo;
 	private String autor;
@@ -35,11 +36,18 @@ public class CadastroLivro {
 	
 	public void setLeia(Scanner ler) {
 		this.leia = ler;
-	}
+	} */
+	
+	/* SUBSCREVENDO O MÉTODO ToString DA CLASSE ArrayList do pacote COLLECTION (POLIMORFISMO)
+	
+	@Override
+    public String toString() {
+        return "[Título: " + this.titulo +"]" ;
+    }*/
 	
 	public String getTitulo() {
 		return titulo;
-	}*/
+	}
 
 	public void setTitulo(String titulo) {
 		this.titulo = titulo;

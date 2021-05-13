@@ -24,10 +24,12 @@ public class Inicio {
 			switch (opMenu){
 				case 1:
 					TesteCadastroLivro.TesteCadastroLivro();
+					//TesteCadastroLivro.main(args);
 					break;
 				case 2:
-					//TesteCliente.main(args);
-					//break;
+					TesteClienteBiblioteca.TesteClienteBiblioteca();
+					//TesteClienteBiblioteca.main(args);
+					break;
 				case 3:
 					//neste opção estamos instanciando um objeto da classe emprestimo
 					System.out.println("\t\n::: Empréstimo de Livros ::: \n");

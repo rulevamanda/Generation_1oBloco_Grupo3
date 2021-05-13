@@ -2,7 +2,7 @@ package prjModuloBloco1;
 
 import java.util.Scanner;
 
-public class TesteDevolucao {
+public class TesteDevolucao{
 
 	public static void TesteDevolucao() {
 	//public static void main(String[] args) {
