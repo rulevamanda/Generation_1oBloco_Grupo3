@@ -12,16 +12,15 @@ public class Inicio {
 		// TODO Auto-generated method stub
 		
 			
-			System.out.println("\t::.. BIBLIOTECA GENERATION BRASIL ..:: \n");
-			System.out.println("\tBem vindo! O que deseja fazer? \n\n\t1-Cadastrar Livro \n\t2-Cadastrar Cliente \n\t3-Empréstimo de Livro \n\t4-Devolução de Livro \n\t5-Sair");
-			opMenu = leia.nextInt();
+			//System.out.println("\t::.. BIBLIOTECA GENERATION BRASIL ..:: \n");
+			//System.out.println("\tBem vindo! O que deseja fazer? \n\n\t1-Cadastrar Livro \n\t2-Cadastrar Cliente \n\t3-Empréstimo de Livro \n\t4-Devolução de Livro \n\t5-Sair");
+			opMenu = 0;
 			
-			while(opMenu <= 0 || opMenu > 5) {
-				System.out.println("ATENÇÃO!!! Valor digitado fora das opções. ");
+			while(opMenu >= 0 && opMenu < 5) {
+				//System.out.println("ATENÇÃO!!! Valor digitado fora das opções. ");
 				System.out.println("Digite o que deseja fazer: \n\t1-Cadastrar Livro \n\t2-Cadastrar Cliente \n\t3-Empréstimo de Livro \n\t4-Devolução de Livro \n\t5-Sair");
 				opMenu = leia.nextInt();
-			}
-			switch (opMenu){
+				switch (opMenu){
 				case 1:
 					TesteCadastroLivro.TesteCadastroLivro();
 					//TesteCadastroLivro.main(args);
@@ -45,10 +44,13 @@ public class Inicio {
 					System.out.println("Sistema encerrado pelo usuário. Até mais!");
 					break;
 				default:
-					System.out.println("Valor digitado fora das opções: ");
-					System.out.println("Digite o que deseja fazer: ");
-					opMenu = leia.nextInt();
+					System.err.println("Valor digitado fora das opções!!! ");
+					//System.out.println("Valor digitado fora das opções!!! ");
+					//System.out.println("Digite o que deseja fazer: ");
+					//opMenu = leia.nextInt();
 			}
+			}
+
 	}
 
 }

@@ -6,7 +6,7 @@ public class TesteEmprestimo extends EmprestimoDevolucao {
 		
 		//nesta classe estamos usando herança da classe EmprestimoDevolucao;
 		super(codCliente);
-		System.out.println("Nome do cliente: "+getNomeCliente());
+		//System.out.println("Nome do cliente: "+getNomeCliente());
 		fazerEmprestimo();
 		
 		

@@ -92,7 +92,7 @@ public class EmprestimoDevolucao {
 		}
 		this.titulo = infoLivro[localizador][0];
 		this.autor = infoLivro[localizador][1];
-		this.edicao = infoLivro[localizador][3];
+		this.edicao = infoLivro[localizador][2];
 		System.out.println("\n");
 		System.out.println("Título livro: "+this.titulo);
 		System.out.println("Autor: "+this.autor);
