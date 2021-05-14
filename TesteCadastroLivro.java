@@ -4,46 +4,55 @@ import java.util.Scanner;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.InputMismatchException;
 
 public class TesteCadastroLivro {
 
-	public static void TesteCadastroLivro() {
-		
-	//public static void main(String[] args) {
+	public static void cadastroLivro(int cod) {
 		
 		Scanner read = new Scanner(System.in);
+		String titulo,autor,genero,edicao;
+		int ano =0 ,codigo;
 		
-		String titulo,autor,genero;
-		
-		int quant=0,ano,codigo=0;
-		
-		System.out.println("Digite o título do livro: ");
+		System.out.println("...........::: CADASTRAR LIVRO :::...........");
+		System.out.print("Digite o título do livro: ");
 		titulo = read.nextLine();
 		
-		System.out.println("Digite o autor do livro: ");
+		System.out.print("Digite o autor do livro: ");
 		autor = read.nextLine();
 		
-		System.out.println("Digite o genero do livro: ");
+		System.out.print("Digite o genero do livro: ");
 		genero = read.nextLine();
 		
-		System.out.println("Digite o ano de publicação do livro: ");
-		ano = read.nextInt();
+	
 		
-		codigo++;
-		System.out.println("Código gerado: "+codigo);
+		boolean continueLoop = true;
 		
-		
-		CadastroLivro novo = new CadastroLivro(titulo,autor,genero,ano,codigo);
+		do {
+			try {		
+				System.out.print("Digite o ano de publicação do livro: ");
+				ano = read.nextInt();
+				continueLoop = false;
+			}
 			
-		novo.printInfo();
-		quant++;
-		System.out.println("Quantidade de livros cadastrados: "+quant);
+			catch(InputMismatchException e) {
+				//System.err.printf("\nExceptption: %s\n",e);
+				read.nextLine();
+				System.out.println("\nDigite um valor do tipo inteiro. Por favor, tente novamente.\n");
+			}
+			
+		}while(continueLoop);
+
+	
+		read.nextLine();
+		System.out.print("Digite a edição de publicação do livro: ");
+		edicao = read.nextLine();
 		
-		/* Tentativa de Usar COLLECTION
-		 * 
-		ArrayList<CadastroLivro> livro = new ArrayList<>();
-        livro.add(novo);
-		System.out.println(livro);*/
+		codigo = cod;
+
+		CadastroLivro novo = new CadastroLivro(titulo,autor,genero,ano,codigo,edicao);
+		novo.printInfo();
+		
 		
 		
 	}

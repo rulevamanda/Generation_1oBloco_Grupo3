@@ -1,50 +1,44 @@
 package prjModuloBloco1;
 
-import java.util.Scanner;
-
 
 public class CadastroLivro {
 	
-	//Scanner leia = new Scanner(System.in);
 	
 	private String titulo;
 	private String autor;
 	private String genero;
-	private int quant=0;//quantidade de livros cadastrados
+	private String edicao;
 	private int ano;//ano de publicação
-	private int codigo=0;//simples usar ++ para simplificação
+	private int codigo;
 	private int conf;//confirmação do cadastro
 
-	public CadastroLivro(String titulo, String autor, String genero, int ano, int codigo) {
+	public CadastroLivro(String titulo, String autor, String genero, int ano, int codigo, String edicao) {
 		this.titulo = titulo;
 		this.autor = autor;
 		this.genero = genero;
 		this.ano = ano;
 		this.codigo = codigo;
+		this.edicao = edicao;
 	}
 	
 	public void printInfo() {
-		System.out.println("Título: "+titulo+"\nAutor: "+autor+"\nAno de publicação: "+ano+"\nGênero: "
-								+genero+"\nCódigo gerado: "+codigo);
+		System.out.println();
+		System.out.println("-------------------------------------------------");
+		System.out.println("\t --- NOVO LIVRO CADASTRADO --- ");
+		System.out.println("Título: "+titulo+" | ID "+codigo+"\nAutor: "+autor+"\nAno de publicação: "+ano+"\nEdição: "+edicao+"\nGênero: "
+								+genero);
 		
 	}
 	
-	/*esse processo não faz nada no programa
-	 * public Scanner getLeia() {
-		return leia;
+
+	public String getEdicao() {
+		return edicao;
 	}
-	
-	public void setLeia(Scanner ler) {
-		this.leia = ler;
-	} */
-	
-	/* SUBSCREVENDO O MÉTODO ToString DA CLASSE ArrayList do pacote COLLECTION (POLIMORFISMO)
-	
-	@Override
-    public String toString() {
-        return "[Título: " + this.titulo +"]" ;
-    }*/
-	
+
+	public void setEdicao(String edicao) {
+		this.edicao = edicao;
+	}
+
 	public String getTitulo() {
 		return titulo;
 	}
@@ -67,14 +61,6 @@ public class CadastroLivro {
 
 	public void setGenero(String genero) {
 		this.genero = genero;
-	}
-
-	public int getQuant() {
-		return quant;
-	}
-
-	public void setQuant(int quant) {
-		this.quant = quant;
 	}
 
 	public int getAno() {

@@ -16,7 +16,7 @@ public class ClienteBiblioteca  {
 	
 	private Scanner leia = new Scanner(System.in);
 	
-	public ClienteBiblioteca (String x, String sexo, String cpf,String dtnasc, int telefone, String endereco, String email, int id)
+	public ClienteBiblioteca (String x, String sexo, String cpf,String dtnasc, int telefone, String endereco, String email)
 	{
 		this.nome = x;
 		this.sexo = sexo;
