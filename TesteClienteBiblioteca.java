@@ -55,7 +55,7 @@ public class TesteClienteBiblioteca {
 		System.out.println("\t --- NOVO CLIENTE CADASTRO --- ");
 		System.out.println("Nome: "+novoCliente.getNome()+"\nSexo: "+novoCliente.getSexo()+ "\nCPF: " +novoCliente.getCpf() 
 			+ "\nData de nascimento: "+novoCliente.getDtnasc()+"\nTelefone: "+novoCliente.getTelefone()+"\nEndereço: "+novoCliente.getEndereco()
-			+"\nE-mail: "+novoCliente.getEmail()+"\nCódigo gerado para cliente"+novoCliente.getId());
+			+"\nE-mail: "+novoCliente.getEmail());
 	
 	}
 
